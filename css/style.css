@@ -161,6 +161,52 @@ a {
 .card-template {
     width: 18rem;
 }
+/* End of About */
+
+/* Start of Services */
+#services {
+    background-color: #0f0e0c;
+    color: #fff;
+}
+#services-title h5 {
+    color: #ffbd59;
+    font-size: 16px;
+}
+#services-title h3 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.services-col-container {
+    background-color: #202020;
+    border-radius: 14px;
+    padding-top: 160px;
+    padding-bottom: 26px;
+}
+.services-col-container a:hover {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.services-col-container a:not(:hover) {
+    transition: 0.3s;
+}
+.modal-color {
+    background-color: #202020;
+}
+.btn-close-white {
+    filter: invert(1);
+    opacity: 1;
+}
+.icon-color {
+    color: #ffd18c;
+}
+.modal-ul {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 16px;
+}
+
+
 /********** Large Device Only **********/
 @media (min-width: 1200px) {
     /* About */
@@ -257,6 +303,14 @@ a {
     .card-body p {
         font-size: 14px;
     }
+    /* End of About */
+
+    /* Start of Services */
+    .services-col-container {
+        padding-top: 140px;
+        padding-bottom: 26px;
+    }
+    /* End of Services */
 }
 
 /********** Extra Small Device Only **********/
@@ -313,7 +367,7 @@ a {
         width: 300px;
     }
     .h2-title {
-        font-size: 16px;
+        font-size: 14px;
     }
     .h2-title::after {
         width: 300px;
