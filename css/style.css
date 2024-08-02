@@ -306,6 +306,33 @@ a {
 }
 /* End of Projects */
 
+/* Start of Contacts */
+
+#contacts-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../images/contacts-imgs/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+}
+.name-color {
+    color: #ffbd59;
+}
+#contacts-container {
+    margin: 50px 0 0 150px;
+}
+#contact-info {
+    padding-top: 120px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+#form-container {
+    border: 1px solid #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+}
+/* End of Contacts */
 
 /********** Large Device Only **********/
 @media (min-width: 1200px) {
@@ -335,6 +362,11 @@ a {
     }
     .card-body p {
         font-size: 14px;
+    }
+    
+    /* Contacts */
+    #contacts-container {
+        margin: 50px 0 0 50px;
     }
 }
 
@@ -412,7 +444,10 @@ a {
     }
     /* End of Services */
 
-    
+    /* Contacts */
+    #contacts-container {
+        margin: 50px 0 0 50px;
+    }
 }
 
 /********** Extra Small Device Only **********/
@@ -488,5 +523,10 @@ a {
     }
     .card-body p {
         font-size: 12px;
+    }
+
+    /* Contacts */
+    #contacts-container {
+        margin: 50px 0 0 0px;
     }
 }
