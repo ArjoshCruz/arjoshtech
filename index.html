@@ -15,18 +15,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo+2&family=Orbitron:wght@400..900&display=swap"
       rel="stylesheet"
     />
 
-    <style></style>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
+
   <body class="bg-[#0a0f1c] text-white font-sans">
     <!-- Header -->
     <header
-      class="bg-[#1a1a2e] text-white py-4 px-6 md:px-16 m-4 rounded-full flex justify-between items-center relative"
+      class="px-6 mx-4 bg-[#1a1a2e] text-white py-4 md:px-16 my-4 rounded-full flex justify-between items-center relative"
     >
-      <!-- Left Section -->
+      <!-- Left Logo -->
       <div class="flex items-center">
         <img src="img/logo.png" alt="ArjoshTech Logo" class="h-12 md:h-20" />
         <img
@@ -36,7 +41,7 @@
         />
       </div>
 
-      <!-- Desktop Navigation -->
+      <!-- Desktop Nav -->
       <nav
         class="hidden md:flex items-center font-bold gap-6 lg:gap-16 me-0 lg:me-20"
       >
@@ -46,7 +51,7 @@
         <a href="#" class="nav-link">Contact</a>
       </nav>
 
-      <!-- Right Section Desktop Button -->
+      <!-- Contact Button -->
       <div
         class="hidden md:inline-block bg-gradient-to-r from-[#00ffff] to-[#00ff99] p-[2px] rounded-lg"
       >
@@ -58,7 +63,7 @@
         </a>
       </div>
 
-      <!-- Hamburger Icon -->
+      <!-- Hamburger -->
       <div class="md:hidden">
         <button
           id="menu-btn"
@@ -86,14 +91,127 @@
           >
             <span
               class="block rounded-lg px-4 py-2 font-bold text-white bg-[#1a1a2e]"
+              >Contact Me</span
             >
-              Contact Me
-            </span>
           </a>
         </nav>
       </div>
     </header>
-    <!-- Script -->
+
+    <!-- Landing Page -->
+    <main class="px-6 mx-4 flex items-center justify-center min-h-screen">
+      <div
+        class="flex flex-col md:flex-row justify-between items-start gap-8 border-b-4 border-[#00ff99] w-full"
+      >
+        <!-- Left Section -->
+        <div id="left-section" class="relative md:w-1/3 space-y-4">
+          <!-- Background Effect -->
+          <img
+            src="img/bg2.png"
+            alt="bg-effect2"
+            class="absolute top-28 -left-10 w-80 h-80 -z-10"
+          />
+
+          <div class="max-w-md space-y-2 text-center md:text-left">
+            <div
+              class="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4"
+            >
+              <h3 class="text-4xl font-bold whitespace-nowrap">
+                Hello, It's me
+              </h3>
+              <div
+                class="flex-grow border-t-2 border-[#00ffff] hidden md:block"
+              ></div>
+            </div>
+            <div class="my-4">
+              <h2 class="text-6xl font-bold my-2 tracking-wide">
+                Ronald Josiah
+              </h2>
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold">
+                aka <span class="text-[#00ffff]">Arjosh</span>
+              </h3>
+            </div>
+          </div>
+
+          <!-- CV Button -->
+          <div class="text-center md:text-left">
+            <button
+              class="px-8 py-2 md:px-28 md:py-3 font-bold bg-[#00ff99] text-[#0a0f1c] rounded-2xl hover:bg-[#00e68a] transition duration-300"
+            >
+              Download CV
+            </button>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="flex justify-center md:justify-start space-x-4 pt-4">
+            <a
+              href="#"
+              class="w-12 h-12 text-xl flex items-center justify-center rounded-full border-2 border-[#00ff99] bg-[#0a0f1c] text-[#00ff99] hover:bg-[#00ff99] hover:text-white transition duration-300"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="w-12 h-12 text-xl flex items-center justify-center rounded-full border-2 border-[#00ff99] bg-[#0a0f1c] text-[#00ff99] hover:bg-[#00ff99] hover:text-white transition duration-300"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="w-12 h-12 text-xl flex items-center justify-center rounded-full border-2 border-[#00ff99] bg-[#0a0f1c] text-[#00ff99] hover:bg-[#00ff99] hover:text-white transition duration-300"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="#"
+              class="w-12 h-12 text-xl flex items-center justify-center rounded-full border-2 border-[#00ff99] bg-[#0a0f1c] text-[#00ff99] hover:bg-[#00ff99] hover:text-white transition duration-300"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Middle Section -->
+        <div id="middle-section" class="relative md:w-1/3 hidden md:block">
+          <img
+            src="img/semicircle.png"
+            alt="Background Semicircle"
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 -z-10 w-[800px]"
+          />
+          <img
+            src="img/sample.png"
+            alt="Person Image"
+            class="relative mx-auto w-[800px]"
+          />
+        </div>
+
+        <!-- Right Section -->
+        <div id="right-section" class="relative md:w-1/3 space-y-4">
+          <img
+            src="img/bg1.png"
+            alt=""
+            class="absolute opacity-30 -z-10 sm:-top-56"
+          />
+
+          <div class="max-w-md space-y-2 text-center md:text-end">
+            <h4 class="text-3xl font-bold">I am a</h4>
+            <h2
+              id="typing-text"
+              class="text-4xl md:text-5xl font-bold text-[#00ffff]"
+            ></h2>
+            <p class="text-lg font-light">
+              Creating beautiful and functional web experiences with a focus on
+              user-centric design and seamless performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Typing script -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

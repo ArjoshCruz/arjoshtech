@@ -10,3 +10,15 @@ if (mobileMenu.classList.contains("max-h-0")) {
     mobileMenu.classList.add("max-h-0");
 }
 });
+
+// TypeIt for typing effect
+  new TypeIt("#typing-text", {
+    strings: ["Web Developer", "Frontend Designer", "UI/UX Enthusiast"],
+    speed: 100,
+    breakLines: false,
+    deleteSpeed: 50,
+    waitUntilVisible: true,
+    loop: true,
+    nextStringDelay: 1000,
+    cursorChar: "|"
+  }).go();
