@@ -26,3 +26,17 @@
 .mobile-menu {
     transition: max-height 0.75s ease-out;
 }
+
+meter::-webkit-meter-bar {
+  background: none; 
+  background-color: lightgray; 
+}
+
+meter::-webkit-meter-optimum-value {
+  box-shadow: 0 5px 5px -5px #999 inset;
+  background-image: linear-gradient(
+    90deg, 
+    #00ff99
+  );
+  background-size: 100% 100%;
+}

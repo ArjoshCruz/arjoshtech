@@ -11,14 +11,26 @@ if (mobileMenu.classList.contains("max-h-0")) {
 }
 });
 
-// TypeIt for typing effect
-  new TypeIt("#typing-text", {
-    strings: ["Web Developer", "Frontend Designer", "UI/UX Enthusiast"],
-    speed: 100,
-    breakLines: false,
-    deleteSpeed: 50,
-    waitUntilVisible: true,
-    loop: true,
-    nextStringDelay: 1000,
-    cursorChar: "|"
-  }).go();
+// Landing page typing
+new TypeIt("#typing-text-landing", {
+  strings: ["Web Developer", "Frontend Designer", "UI/UX Enthusiast"],
+  speed: 100,
+  breakLines: false,
+  deleteSpeed: 50,
+  waitUntilVisible: true,
+  loop: true,
+  nextStringDelay: 1000,
+  cursorChar: "|"
+}).go();
+
+// About section typing (optional)
+new TypeIt("#typing-text-about", {
+  strings: ["Web Developer", "Frontend Designer", "UI/UX Enthusiast"],
+  speed: 100,
+  breakLines: false,
+  deleteSpeed: 50,
+  waitUntilVisible: true,
+  loop: true,
+  nextStringDelay: 1000,
+  cursorChar: "|"
+}).go();

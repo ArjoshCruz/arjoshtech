@@ -20,10 +20,8 @@
     />
 
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
   </head>
 
   <body class="bg-[#0a0f1c] text-white font-sans">
@@ -43,20 +41,20 @@
 
       <!-- Desktop Nav -->
       <nav
-        class="hidden md:flex items-center font-bold gap-6 lg:gap-16 me-0 lg:me-20"
+        class="hidden md:flex items-center  gap-6 lg:gap-16 me-0 lg:me-20"
       >
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Services</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link font-black">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
       </nav>
 
-      <!-- Contact Button -->
+      <!-- Contact Me Button -->
       <div
         class="hidden md:inline-block bg-gradient-to-r from-[#00ffff] to-[#00ff99] p-[2px] rounded-lg"
       >
         <a
-          href="#"
+          href="#contactMe"
           class="block rounded-lg px-4 py-2 lg:px-5 lg:py-3 font-bold text-white bg-[#1a1a2e] text-center"
         >
           Contact Me
@@ -100,115 +98,979 @@
 
     <!-- Landing Page -->
     <main class="px-6 mx-4 flex items-center justify-center min-h-screen">
-      <div
-        class="flex flex-col md:flex-row justify-between items-start gap-8 border-b-4 border-[#00ff99] w-full"
-      >
-        <!-- Left Section -->
-        <div id="left-section" class="relative md:w-1/3 space-y-4">
-          <!-- Background Effect -->
-          <img
-            src="img/bg2.png"
-            alt="bg-effect2"
-            class="absolute top-28 -left-10 w-80 h-80 -z-10"
-          />
+        <img 
+          src="img/gridBg.png" 
+          alt="Background Grid"
+          class="absolute opacity-10 top-0 left-0 w-full h-full object-cover -z-10"
+        />
+      <div class="pb-3 md:pb-0 flex flex-col md:flex-row justify-center items-start gap-8 border-b-4 border-[#00ff99] w-full">
 
-          <div class="max-w-md space-y-2 text-center md:text-left">
-            <div
-              class="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4"
-            >
-              <h3 class="text-4xl font-bold whitespace-nowrap">
+        <!-- Left Section -->
+        <div id="left-section" class="mt-5 relative md:flex-1 space-y-6 min-w-0">
+          <!-- Background Effect -->
+        <img
+          src="img/bg2.png"
+          alt="bg-effect2"
+          class="absolute opacity-60 top-80 -left-30 w-80 h-80 -z-10"
+          id="parallax-bg"
+        />
+
+          <div class="space-y-3 text-center md:text-left">
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-3 md:space-y-0 md:space-x-4">
+              <h3 class="text-5xl font-bold whitespace-nowrap">
                 Hello, It's me
               </h3>
-              <div
-                class="flex-grow border-t-2 border-[#00ffff] hidden md:block"
-              ></div>
+              <div class="flex-grow border-t-2 border-[#00ffff] hidden md:block"></div>
             </div>
             <div class="my-4">
-              <h2 class="text-6xl font-bold my-2 tracking-wide">
+              <h2 class="text-7xl font-bold my-2 tracking-wide">
                 Ronald Josiah
               </h2>
             </div>
             <div>
-              <h3 class="text-3xl font-bold">
+              <h3 class="text-4xl font-bold">
                 aka <span class="text-[#00ffff]">Arjosh</span>
               </h3>
             </div>
           </div>
 
-          <!-- CV Button -->
           <div class="text-center md:text-left">
-            <button
-              class="px-8 py-2 md:px-28 md:py-3 font-bold bg-[#00ff99] text-[#0a0f1c] rounded-2xl hover:bg-[#00e68a] transition duration-300"
+            <a 
+              href="files/Cruz, Ronald Josiah - Resume.pdf" 
+              download 
+              class="inline-block px-8 py-3 md:px-32 md:py-4 font-bold bg-[#00ff99] text-[#0a0f1c] rounded-2xl hover:bg-[#00e68a] transition duration-300"
             >
               Download CV
-            </button>
-          </div>
-
-          <!-- Social Icons -->
-          <div class="flex justify-center md:justify-start space-x-4 pt-4">
-            <a
-              href="#"
-              class="w-12 h-12 text-xl flex items-center justify-center rounded-full border-2 border-[#00ff99] bg-[#0a0f1c] text-[#00ff99] hover:bg-[#00ff99] hover:text-white transition duration-300"
-              aria-label="Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              href="#"
-              class="w-12 h-12 text-xl flex items-center justify-center rounded-full border-2 border-[#00ff99] bg-[#0a0f1c] text-[#00ff99] hover:bg-[#00ff99] hover:text-white transition duration-300"
-              aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="#"
-              class="w-12 h-12 text-xl flex items-center justify-center rounded-full border-2 border-[#00ff99] bg-[#0a0f1c] text-[#00ff99] hover:bg-[#00ff99] hover:text-white transition duration-300"
-              aria-label="LinkedIn"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              href="#"
-              class="w-12 h-12 text-xl flex items-center justify-center rounded-full border-2 border-[#00ff99] bg-[#0a0f1c] text-[#00ff99] hover:bg-[#00ff99] hover:text-white transition duration-300"
-              aria-label="GitHub"
-              ><i class="fab fa-github"></i
-            ></a>
+            </a>
           </div>
         </div>
 
         <!-- Middle Section -->
-        <div id="middle-section" class="relative md:w-1/3 hidden md:block">
+        <div id="middle-section" class="relative hidden lg:flex flex-none overflow-visible z-20 items-center justify-center">
           <img
             src="img/semicircle.png"
             alt="Background Semicircle"
-            class="absolute top-0 left-1/2 transform -translate-x-1/2 -z-10 w-[800px]"
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 -z-10 w-[800px] max-w-full"
           />
           <img
             src="img/sample.png"
             alt="Person Image"
-            class="relative mx-auto w-[800px]"
+            class="relative mx-auto lg:w-[730px] sm:w-[350px] max-w-full h-auto"
           />
         </div>
 
         <!-- Right Section -->
-        <div id="right-section" class="relative md:w-1/3 space-y-4">
+        <div id="right-section" class="mt-5 relative md:flex-1 space-y-4 min-w-0 flex justify-end">
           <img
             src="img/bg1.png"
             alt=""
-            class="absolute opacity-30 -z-10 sm:-top-56"
+            class="absolute opacity-30 -z-10 sm:-top-56 right-0"
+            id="parallax-bg1"
           />
-
-          <div class="max-w-md space-y-2 text-center md:text-end">
-            <h4 class="text-3xl font-bold">I am a</h4>
-            <h2
-              id="typing-text"
-              class="text-4xl md:text-5xl font-bold text-[#00ffff]"
-            ></h2>
-            <p class="text-lg font-light">
-              Creating beautiful and functional web experiences with a focus on
-              user-centric design and seamless performance.
+          <div class="space-y-3 text-center md:text-end">
+            <h4 class="text-4xl font-bold">I am a</h4>
+            <h2 id="typing-text-landing" class="text-5xl md:text-6xl font-bold text-[#00ffff]"></h2>
+            <p class="text-xl font-light">
+              Creating beautiful and functional web experiences with a focus on user-centric design and seamless performance.
             </p>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- About Me Section -->
+    <section id="about" class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-24">
+        
+        <!-- Left Side -->
+        <div class="lg:w-1/3">
+          <div class="lg:sticky lg:top-20 flex flex-col items-center space-y-6 p-8 bg-[#0a0f1c] rounded-3xl shadow-2xl border-4 border-[#00ff99]">
+            
+            <!-- Image Container -->
+            <div class="flex flex-col items-center space-y-4 w-full">
+              <img 
+                src="img/sample.png" 
+                alt="Arjosh" 
+                class="w-64 h-64 object-cover grayscale"
+              />
+            </div>
+
+            <!-- Name Box -->
+            <div class="w-full bg-transparent border-4 border-[#00ff99] rounded-3xl py-4 px-6">
+              <h3 class="text-4xl font-bold text-white text-center">Arjosh</h3>
+            </div>
+
+            <!-- Typing Effect Title -->
+            <h4 id="typing-text-about" class="text-3xl font-bold text-[#00ffff] text-center">Web Developer</h4>
+
+            <!-- Contact Info -->
+            <div class="space-y-4 text-left text-white w-full px-4">
+              <p class="flex items-center gap-4 text-lg">
+                <svg class="w-8 h-8 text-[#00ff99] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke-width="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6" stroke-width="2"/>
+                  <line x1="8" y1="2" x2="8" y2="6" stroke-width="2"/>
+                  <line x1="3" y1="10" x2="21" y2="10" stroke-width="2"/>
+                </svg>
+                <span>June 10, 2004</span>
+              </p>
+              <p class="flex items-center gap-4 text-lg">
+                <svg class="w-8 h-8 text-[#00ff99] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke-width="2"/>
+                  <circle cx="12" cy="9" r="2.5" stroke-width="2"/>
+                </svg>
+                <span>Cavite, Philippines</span>
+              </p>
+              <p class="flex items-center gap-4 text-lg">
+                <svg class="w-8 h-8 text-[#00ff99] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <rect x="2" y="4" width="20" height="16" rx="2" stroke-width="2"/>
+                  <path d="M2 7l10 7 10-7" stroke-width="2"/>
+                </svg>
+                <span class="break-all">ronaldjosiah.cruz@gmail.com</span>
+              </p>
+              <p class="flex items-center gap-4 text-lg">
+                <svg class="w-8 h-8 text-[#00ff99] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-width="2"/>
+                </svg>
+                <span>+63 993 609 7393</span>
+              </p>
+            </div>
+
+            <!-- Contact Button -->
+            <button class="w-full bg-[#00ffff] hover:bg-[#00dddd] text-black font-bold text-xl py-4 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+              Contact Me
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="lg:w-2/3 space-y-12">
+          
+          <!-- About Me Section -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-5xl font-bold text-white mb-2">About Me</h2>
+              <div class="w-full h-1 bg-gradient-to-r from-[#00ffff] to-transparent"></div>
+            </div>
+            
+            <div class="space-y-4 text-gray-300 text-lg leading-relaxed">
+              <p class="text-xl">
+                Hi, I'm Cathy M. Dela Cruz, a dedicated professional looking to transition into the world of virtual assistance.
+              </p>
+              
+              <p>
+                With four years of experience as a Customer Service Representative, I have developed strong communication, problem-solving, and organizational skills—all essential for a Virtual Assistant role. My ability to handle customer concerns, manage tasks efficiently, and adapt to new systems makes me a great candidate despite not having direct VA experience.
+              </p>
+              
+              <p class="text-[#00ffff] font-semibold">
+                Let's connect and see how I can support your business!
+              </p>
+            </div>
+          </div>
+
+          <!-- Profile Section -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-5xl font-bold text-white mb-2">Profile</h2>
+              <div class="w-full h-1 bg-gradient-to-r from-[#00ffff] to-transparent"></div>
+            </div>
+            
+            <p class="text-gray-300 text-xl mb-8 leading-relaxed">
+              A quick glance at my background, skills, and experience—here's what defines me professionally.
+            </p>
+
+            <!-- Profile Information -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+              
+              <!-- Left Column -->
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[140px]">Name:</span>
+                  <span class="text-white text-lg">Ronald Josiah Cruz</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[140px]">Birthday:</span>
+                  <span class="text-white text-lg">June 10, 2004</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[140px]">Age:</span>
+                  <span class="text-white text-lg">21</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[140px]">Address:</span>
+                  <span class="text-white text-lg">Cavite, Philippines</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[140px]">Status:</span>
+                  <span class="text-white text-lg">Single</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[140px]">Nationality:</span>
+                  <span class="text-white text-lg">Filipino</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[140px]">Languages:</span>
+                  <span class="text-white text-lg">Filipino, English</span>
+                </div>
+              </div>
+
+              <!-- Right Column -->
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[160px]">Degree:</span>
+                  <span class="text-white text-lg">Bachelor of Science in Computer Science</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[160px]">Previous Job:</span>
+                  <span class="text-white text-lg">OJT - IT Intern</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[160px]">Experience:</span>
+                  <span class="text-white text-lg">OJT - IT Intern</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[160px]">Email:</span>
+                  <span class="text-white text-lg break-all">ronaldjosiah.cruz@gmail.com</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[160px]">Phone:</span>
+                  <span class="text-white text-lg">+63 993 609 7393</span>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="text-[#00ffff] font-bold text-lg min-w-[160px]">LinkedIn:</span>
+                  <a href="https://www.linkedin.com" target="_blank" class="text-[#00ffff] text-lg hover:underline break-all">https://www.linkedin.com/in/ronaldjosiah-cruz/</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Interests -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-5xl font-bold text-white mb-2">Interests and Hobbies</h2>
+              <div class="w-full h-1 bg-gradient-to-r from-[#00ffff] to-transparent"></div>
+            </div>
+
+            <p class="mb-6 text-gray-300 text-xl leading-relaxed">
+              What drives me and keeps me motivated in life.
+            </p>
+
+            <!-- Grid of Interest Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+              <!-- Card 1 -->
+              <div class="bg-[#1a1a2e] p-6 rounded-2xl shadow-lg flex flex-col items-center 
+                          border border-[#00ffff]/40 hover:border-[#00ffff] transition">
+                <i class="fa-solid fa-film text-4xl w-10 h-10 text-[#00ffff] mb-3"></i> 
+                <p class="text-xl text-gray-200 text-center">Watching movies and anime</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="bg-[#1a1a2e] p-6 rounded-2xl shadow-lg flex flex-col items-center 
+                          border border-[#00ffff]/40 hover:border-[#00ffff] transition">
+                <i class="fa-solid fa-gamepad text-4xl w-10 h-10 text-[#00ffff] mb-3"></i>
+                <p class="text-xl text-gray-200 text-center">Playing video games (Pokémon)</p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="bg-[#1a1a2e] p-6 rounded-2xl shadow-lg flex flex-col items-center 
+                          border border-[#00ffff]/40 hover:border-[#00ffff] transition">
+                <i class="fa-solid fa-guitar text-4xl w-10 h-10 text-[#00ffff] mb-3"></i>
+                <p class="text-xl text-gray-200 text-center">Playing instruments</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Bucket List -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-5xl font-bold text-white mb-2">Bucket List</h2>
+              <div class="w-full h-1 bg-gradient-to-r from-[#00ffff] to-transparent"></div>
+            </div>
+
+            <p class="mb-6 text-gray-300 text-xl leading-relaxed">
+              Kicking the bucket? ahhhh, I'll do these first:
+            </p>
+            <ul class="ms-5 list-disc list-inside space-y-3 text-gray-300 text-lg">
+              <li>Travel to Japan during cherry blossom season</li>
+              <li>Learn to play a musical instrument proficiently</li>
+              <li>Write and publish a novel</li>
+              <li>Run a marathon in under 4 hours</li>
+              <li>Start my own tech company</li>
+              <li>Try every food spicyness level</li>
+            </ul>
+          </div>
+
+          <!-- Strengths & Challenges -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-5xl font-bold text-white mb-2">Strengths & Challenges</h2>
+              <div class="w-full h-1 bg-gradient-to-r from-[#00ffff] to-transparent"></div>
+            </div>
+
+            <p class="text-gray-300 text-xl mb-8 leading-relaxed">
+              Strengths that drive me and challenges that shape me
+            </p>
+
+            <!-- Profile Information -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+              
+              <!-- Left Column -->
+              <div class="space-y-4">
+                <h3 class="text-3xl underline">Strengths:</h3>
+                <ul class="ms-5 list-disc list-inside space-y-3 text-gray-300 text-lg">
+                  <li>Creative</li>
+                  <li>Good at Multitasking</li>
+                  <li>Logical Thinker</li>
+                </ul>
+              </div>
+
+              <!-- Right Column -->
+              <div class="space-y-4">
+                <h3 class="text-3xl underline">Challenges:</h3>
+                <ul class="ms-5 list-disc list-inside space-y-3 text-gray-300 text-lg">
+                  <li>Shyness at its finest</li>
+                  <li>Tends to cram</li>
+                  <li>Dependent at times</li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Greatest Fear -->
+          <div>
+            <div class="mb-6">
+              <h2 class="text-5xl font-bold text-white mb-2">What I Fear the Most</h2>
+              <div class="w-full h-1 bg-gradient-to-r from-[#00ffff] to-transparent"></div>
+            </div>
+
+            <div class="text-center space-y-4">
+              <img 
+                src="https://reachlink.com/wp-content/uploads/2025/08/pexels-stephen-leonardi-587681991-33325917-1024x683.jpg" 
+                alt="Fear of Heights"
+                class="w-full max-w-xl mx-auto rounded-3xl shadow-2xl object-cover"
+              />
+
+              <p class="text-4xl font-bold text-white mt-4">Acrophobia</p>
+              <p class="text-2xl text-[#00ffff] italic">Fear of Heights</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -------------------------------------- -->
+    <!-- Life Motto -->
+    <div class="my-10 text-center">
+      <hr class="border-1 border-[#00ffff] w-3/4 mx-auto mb-6">
+      
+      <p class="text-3xl font-semibold italic mb-2">
+        “Daig ng taong madiskarte ang matalino”
+      </p>
+      <p class="text-xl">-Arjosh2025</p>
+      
+      <hr class="border-1 border-[#00ffff] w-3/4 mx-auto mt-6">
+    </div>
+    <!-- -------------------------------------- -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="my-12">
+      <div class="container mx-auto px-6 lg:px-20">
+        <!-- Header -->
+        <div class="mb-8 text-center mx-auto max-w-3xl">
+          <h2 class="text-5xl font-bold text-white mb-2">Skills</h2>
+          <div class="w-32 h-1 bg-gradient-to-r from-[#00ffff] to-[#00ff99] mx-auto mb-4"></div>
+          <p class="mb-6 text-gray-300 text-xl leading-relaxed">
+            A showcase of my key strengths and abilities that help me excel in my role.
+          </p>
+        </div>
+
+        <!-- Skill groups -->
+        <div class="grid gap-8">
+
+          <!-- Front End -->
+          <div class="mb-6">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-3xl text-white">Front End</h3>
+              <div class="w-80">
+                <meter 
+                  class="mt-2 w-full h-5 rounded-lg overflow-hidden"
+                  value="8" min="0" max="10"
+                  style="accent-color: #00ff99;">
+                  8 out of 10
+                </meter>
+                <p class="text-xl text-end">80%</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">HTML</button>
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">JavaScript</button>
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">TypeScript</button>
+            </div>
+          </div>
+
+          <!-- Styling & Design -->
+          <div class="mb-6">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-3xl text-white">Styling & Design</h3>
+              <div class="w-80">
+                <meter 
+                  class="w-full h-5 rounded-lg overflow-hidden"
+                  value="9" min="0" max="10"
+                  style="accent-color: #00ff99;">
+                  9 out of 10
+                </meter>
+                <p class="text-xl text-end">90%</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">CSS</button>
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">Tailwind CSS</button>
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">Bootstrap</button>
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">Canva</button>
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">Figma</button>
+            </div>
+          </div>
+
+          <!-- Back End -->
+          <div class="mb-6">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-3xl text-white">Back End</h3>
+              <div class="w-80">
+                <meter 
+                  class="w-full h-5 rounded-lg overflow-hidden"
+                  value="7" min="0" max="10"
+                  style="accent-color: #00ff99;">
+                  7 out of 10
+                </meter>
+                <p class="text-xl text-end">70%</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">PHP</button>
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">MySQL</button>
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">Python</button>
+            </div>
+          </div>
+
+          <!-- Others -->
+          <div class="mb-6">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-3xl text-white">Others</h3>
+              <div class="w-80">
+                <meter 
+                  class="w-full h-5 rounded-lg overflow-hidden"
+                  value="6" min="0" max="10"
+                  style="accent-color: #00ff99;">
+                  6 out of 10
+                </meter>
+                <p class="text-xl text-end">60%</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">Git</button>
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">GitHub</button>
+              <button class="text-[#00ffff] bg-[#1a1a2e] px-5 py-2 rounded-lg hover:bg-[#00ffff] hover:text-[#1a1a2e] transition transform hover:scale-105">Linux</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------- -->
+    <!-- Life Motto 2 -->
+    <div class="my-10 text-center">
+      <hr class="border-1 border-[#00ffff] w-3/4 mx-auto mb-6">
+      
+      <p class="text-3xl font-semibold italic mb-2">
+        "I want to be the very best, like no one ever was”
+      </p>
+      <p class="text-xl">-Ash Ketchum</p>
+      
+      <hr class="border-1 border-[#00ffff] w-3/4 mx-auto mt-6">
+    </div>
+    <!-- -------------------------------------- -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="my-12">
+      <div class="container mx-auto px-6 lg:px-20">
+        <!-- Header -->
+        <div class="mb-8 text-center mx-auto max-w-3xl">
+          <h2 class="text-5xl font-bold text-white mb-2">Projects</h2>
+          <div class="w-32 h-1 bg-gradient-to-r from-[#00ffff] to-[#00ff99] mx-auto mb-4"></div>
+          <p class="mb-6 text-gray-300 text-xl leading-relaxed">
+            A collection of the work I’ve built and contributed to.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- JPMC (Card 1) -->
+          <article class="bg-[#0b1220] rounded-2xl overflow-hidden shadow-lg border border-[#1f2b33]">
+            <div class="relative">
+              <img src="img/projects/jpmc.jpg" alt="James Polymers screenshot" class="w-full h-48 object-cover">
+            </div>
+
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-4 mb-3">
+                <h3 class="text-xl font-bold text-white">James Polymers Manufacturing Website</h3>
+                <a href="https://jamespolymers.com/index.php" target="_blank" class="inline-flex items-center gap-2 bg-transparent border border-[#00ffff] text-[#00ffff] px-3 py-1 rounded-lg hover:bg-[#00ffff] hover:text-[#0a0f1c] transition">
+                  Live Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7v7m0 0L10 21l-7-7 11-11z"/></svg>
+                </a>
+              </div>
+
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ffff] border border-[#0b3b35]">HTML</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ffff] border border-[#0b3b35]">CSS</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ffff] border border-[#0b3b35]">Tailwind</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ffff] border border-[#0b3b35]">JavaScript</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ffff] border border-[#0b3b35]">PHP</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ffff] border border-[#0b3b35]">MySQL</span>
+              </div>
+
+              <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                I helped create the front-end design and layout of the James Polymers Manufacturing Corporation website using HTML, CSS, and JavaScript with backend integration for database features during my OJT. The site showcases products and services with a modern, responsive design.
+              </p>
+            </div>
+          </article>
+
+          <!-- Chick & Twirls (Card 2) -->
+          <article class="bg-[#0b1220] rounded-2xl overflow-hidden shadow-lg border border-[#1f2b33]">
+            <div class="relative">
+              <img src="img/projects/chickAndTwirls.jpg" alt="Project screenshot" class="w-full h-48 object-cover">
+              <a href="https://github.com/ArjoshCruz/ChickAndTwirl" target="_blank" class="absolute right-3 bottom-3 bg-[#00ff99] text-[#0a0f1c] font-semibold px-3 py-1 rounded-lg shadow hover:scale-105 transition transform">
+                View Source Code
+              </a>
+            </div>
+
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-4 mb-3">
+                <h3 class="text-xl font-bold text-white">Chick & Twirls</h3>
+                <a href="https://arjoshcruz.github.io/ChickAndTwirl/" target="_blank" class="inline-flex items-center gap-2 bg-transparent border border-[#00ff99] text-[#00ff99] px-3 py-1 rounded-lg hover:bg-[#00ff99] hover:text-[#0a0f1c] transition">
+                  Live Demo
+                </a>
+              </div>
+
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ff99] border border-[#0b3b35]">HTML</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ff99] border border-[#0b3b35]">CSS</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ff99] border border-[#0b3b35]">Tailwind</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ff99] border border-[#0b3b35]">JavaScript</span>
+              </div>
+
+              <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                An e-commerce website for a fictional fried chicken restaurant. Features a responsive design, product catalog, shopping cart, and checkout process.
+              </p>
+            </div>
+          </article>
+
+          <!-- Ikayokat Bistro (Card 3) -->
+          <article class="bg-[#0b1220] rounded-2xl overflow-hidden shadow-lg border border-[#1f2b33]">
+            <div class="relative">
+              <img src="img/projects/ikayokatBistro.jpg" alt="Project screenshot" class="w-full h-48 object-cover">
+              <a href="https://github.com/ArjoshCruz/IkayokatBistro?tab=readme-ov-file" class="absolute right-3 bottom-3 bg-[#00ff99] text-[#0a0f1c] font-semibold px-3 py-1 rounded-lg shadow hover:scale-105 transition transform">
+                View Source Code
+              </a>
+            </div>
+
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-4 mb-3">
+                <h3 class="text-xl font-bold text-white">Ikayokat Bistro</h3>
+                <a href="https://arjoshcruz.github.io/IkayokatBistro/" target="_blank" class="inline-flex items-center gap-2 bg-transparent border border-[#00ff99] text-[#00ff99] px-3 py-1 rounded-lg hover:bg-[#00ff99] hover:text-[#0a0f1c] transition">
+                  Live Demo
+                </a>
+              </div>
+
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ff99] border border-[#0b3b35]">HTML</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ff99] border border-[#0b3b35]">CSS</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ff99] border border-[#0b3b35]">Tailwind</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ff99] border border-[#0b3b35]">JavaScript</span>
+              </div>
+
+              <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                A fictional takoyaki restaurant website built with Bootstrap. Features a menu, about section, and contact form with a modern, responsive design.
+              </p>
+            </div>
+          </article>
+      
+          <!-- JPMC (Card 4) -->
+          <article class="bg-[#0b1220] rounded-2xl overflow-hidden shadow-lg border border-[#1f2b33]">
+            <div class="relative">
+              <img src="img/projects/siquijorWonders.jpg" alt="James Polymers screenshot" class="w-full h-48 object-cover">
+              <a href="https://github.com/ArjoshCruz/SiquijorWonders?tab=readme-ov-file" class="absolute right-3 bottom-3 bg-[#00ffff] text-[#0a0f1c] font-semibold px-3 py-1 rounded-lg shadow hover:scale-105 transition transform">
+                View Source Code
+              </a>
+            </div>
+
+            <div class="p-5">
+              <div class="flex items-center justify-between gap-4 mb-3">
+                <h3 class="text-xl font-bold text-white">Siquijor Wonders</h3>
+                <a href="https://arjoshcruz.github.io/SiquijorWonders/" target="_blank" class="inline-flex items-center gap-2 bg-transparent border border-[#00ffff] text-[#00ffff] px-3 py-1 rounded-lg hover:bg-[#00ffff] hover:text-[#0a0f1c] transition">
+                  Live Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7v7m0 0L10 21l-7-7 11-11z"/></svg>
+                </a>
+              </div>
+
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ffff] border border-[#0b3b35]">HTML</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ffff] border border-[#0b3b35]">CSS</span>
+                <span class="text-sm px-2 py-1 rounded-md bg-[#122026] text-[#00ffff] border border-[#0b3b35]">Bootstrap</span>
+
+              </div>
+
+              <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                A bootstrap made tourism website for Siquijor Island. Showcasing tourist spots, accommodations, and activities with a vibrant, user-friendly design.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------- -->
+    <!-- Life Motto -->
+    <div class="my-10 text-center">
+      <hr class="border-1 border-[#00ffff] w-3/4 mx-auto mb-6">
+      
+      <p class="text-3xl font-semibold italic mb-2">
+        "If you're hungry, eat!"
+      </p>
+      <p class="text-xl">- Monkey D. Luffy</p>
+      
+      <hr class="border-1 border-[#00ffff] w-3/4 mx-auto mt-6">
+    </div>
+    <!-- -------------------------------------- -->
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="my-16">
+      <div class="container mx-auto px-6 lg:px-20">
+        
+        <!-- Header -->
+        <div class="mb-10 text-center mx-auto max-w-3xl">
+          <h2 class="text-5xl font-bold text-white mb-3">Education & Certifications</h2>
+          <div class="w-32 h-1 bg-gradient-to-r from-[#00ffff] to-[#00ff99] mx-auto mb-4"></div>
+          <p class="text-gray-300 text-xl">
+            A summary of my academic background, research work, and industry certifications.
+          </p>
+        </div>
+
+        <h3 class="text-4xl my-5 text-[#00ffff] bold">Education:</h3>
+        <!-- Grid -->
+        <div class="mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Card 1 -->
+          <div class="p-6 bg-[#0d1b2a]/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-semibold text-white">Bachelor of Science in Computer Science</h3>
+            <p class="text-gray-300 mt-2">Emilio Aguinaldo College – Cavite</p>
+            <p class="text-gray-400 text-sm mt-1">2022 – 2026</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="p-6 bg-[#0d1b2a]/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-semibold text-white">Senior High School - STEM Strand</h3>
+            <p class="text-gray-300 mt-2">Emilio Aguinaldo College – Cavite</p>
+            <p class="text-gray-400 text-sm mt-1">2020 – 2022</p>
+          </div>
+
+        </div>
+
+
+        <h3 class="text-4xl my-5 text-[#00ff99] bold">Certifications:</h3>
+        <!-- Grid -->
+        <div class="mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Card 1 -->
+          <div class="p-6 bg-[#0d1b2a]/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-semibold text-white">Introduction to Front-End Development</h3>
+            <p class="text-gray-300 mt-2 underline"><a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/1N4V4OWCPZGZ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">Show Credentials</a></p>
+            <p class="text-gray-300 mt-2">Meta</p>
+            <p class="text-gray-400 text-sm mt-1">Issued: 2024</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="p-6 bg-[#0d1b2a]/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-semibold text-white">Programming with JavaScript</h3>
+            <p class="text-gray-300 mt-2 underline"><a target="_blank"  href="https://www.coursera.org/account/accomplishments/verify/1N4V4OWCPZGZ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">Show Credentials</a></p>
+            <p class="text-gray-300 mt-2">Meta</p>
+            <p class="text-gray-400 text-sm mt-1">Issued: 2025</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="p-6 bg-[#0d1b2a]/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-semibold text-white">HTML, CSS, and Javascript for Web Developers</h3>
+            <p class="text-gray-300 mt-2 underline"><a target="_blank"  href="https://www.coursera.org/account/accomplishments/verify/A9W4T32L5LUK">Show Credentials</a></p>
+            <p class="text-gray-300 mt-2">John Hopkins University</p>
+            <p class="text-gray-400 text-sm mt-1">Issued: 2024</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="p-6 bg-[#0d1b2a]/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-semibold text-white">Introduction to CSS3</h3>
+            <p class="text-gray-300 mt-2 underline"><a target="_blank"  href="https://www.coursera.org/account/accomplishments/verify/SULNW47ATGNA">Show Credentials</a></p>
+            <p class="text-gray-300 mt-2">John Hopkins University</p>
+            <p class="text-gray-400 text-sm mt-1">Issued: 2024</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="p-6 bg-[#0d1b2a]/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-semibold text-white">Introduction to Javascript and Ajax: Building Web Apps</h3>
+            <p class="text-gray-300 mt-2 underline"><a target="_blank"  href="https://www.coursera.org/account/accomplishments/verify/9R5Z7ZFWVZM6">Show Credentials</a></p>
+            <p class="text-gray-300 mt-2">John Hopkins University</p>
+            <p class="text-gray-400 text-sm mt-1">Issued: 2024</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="p-6 bg-[#0d1b2a]/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg">
+            <h3 class="text-2xl font-semibold text-white">Coding the Static Restaurant Site</h3>
+            <p class="text-gray-300 mt-2 underline"><a target="_blank"  href="https://www.coursera.org/account/accomplishments/records/45SWMWZFVCGP">Show Credentials</a></p>
+            <p class="text-gray-300 mt-2">John Hopkins University</p>
+            <p class="text-gray-400 text-sm mt-1">Issued: 2024</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -------------------------------------- -->
+    <!-- Life Motto -->
+    <div class="my-10 text-center">
+      <hr class="border-1 border-[#00ffff] w-3/4 mx-auto mb-6">
+      
+      <p class="text-3xl font-semibold italic mb-2">
+        "Try and try until you ______"
+      </p>
+      <p class="text-xl">- Someone</p>
+      
+      <hr class="border-1 border-[#00ffff] w-3/4 mx-auto mt-6">
+    </div>
+    <!-- -------------------------------------- -->
+
+    <!-- Contact me -->
+    <section id="contactMe" class="max-w-7xl mx-auto py-12">
+      <div class="mb-12 text-center">
+        <h2 class="text-5xl font-bold text-white mb-4">Contact Me</h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-[#00ffff] to-[#00ff99] mx-auto mb-4"></div>
+        <p class="text-gray-300 text-lg">
+          Let's connect! Feel free to reach out for any inquiries or opportunities.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
+        <!-- Left Side - Contact Form -->
+        <div class="bg-[#0a0f1c] border-2 border-[#00ff99]  rounded-3xl p-8 shadow-2xl">
+          <h3 class="text-3xl font-bold text-white mb-6">Send a Message</h3>
+          
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-[#00ffff] font-semibold mb-2">Your Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="John Doe"
+                class="w-full px-4 py-3 bg-[#1a1a2e] text-white border-2 rounded-lg focus:outline-none focus:border-[#00ffff] transition-colors duration-300"
+                required
+              />
+            </div>
+            
+            <div>
+              <label for="email" class="block text-[#00ffff] font-semibold mb-2">Your Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="john@example.com"
+                class="w-full px-4 py-3 bg-[#1a1a2e] text-white border-2 rounded-lg focus:outline-none focus:border-[#00ffff] transition-colors duration-300"
+                required
+              />
+            </div>
+            
+            <div>
+              <label for="subject" class="block text-[#00ffff] font-semibold mb-2">Subject</label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                placeholder="Project Inquiry"
+                class="w-full px-4 py-3 bg-[#1a1a2e] text-white border-2 rounded-lg focus:outline-none focus:border-[#00ffff] transition-colors duration-300"
+                required
+              />
+            </div>
+            
+            <div>
+              <label for="message" class="block text-[#00ffff] font-semibold mb-2">Message</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                placeholder="Tell me about your project..."
+                class="w-full px-4 py-3 bg-[#1a1a2e] text-white border-2 rounded-lg focus:outline-none focus:border-[#00ffff] transition-colors duration-300 resize-none"
+                required
+              ></textarea>
+            </div>
+            
+            <button 
+              type="submit" 
+              class="w-full bg-[#00ffff] hover:bg-[#00ff99] text-black font-bold text-xl py-4 rounded-full transition-all duration-300 transform hover:scale-105"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Side - Contact Information -->
+        <div class="space-y-8">
+          <div class="bg-[#0a0f1c] border-2 border-[#00ff99]  rounded-3xl p-8 shadow-2xl">
+            <h3 class="text-3xl font-bold text-white mb-6">Get in Touch</h3>
+            
+            <div class="space-y-6">
+              
+    
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-[#00ff99] rounded-lg flex-shrink-0">
+                  <svg class="w-6 h-6 text-[#0a0f1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <rect x="2" y="4" width="20" height="16" rx="2" stroke-width="2"/>
+                    <path d="M2 7l10 7 10-7" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-[#00ffff] font-bold text-lg mb-1">Email</h4>
+                  <a href="mailto:ronaldjosiah.cruz@gmail.com" class="text-white hover:text-[#00ffff] transition-colors">
+                    ronaldjosiah.cruz@gmail.com
+                  </a>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-[#00ff99] rounded-lg flex-shrink-0">
+                  <svg class="w-6 h-6 text-[#0a0f1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-[#00ffff] font-bold text-lg mb-1">Phone</h4>
+                  <a href="tel:+639936097393" class="text-white hover:text-[#00ffff] transition-colors">
+                    +63 993 609 7393
+                  </a>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-[#00ff99] rounded-lg flex-shrink-0">
+                  <svg class="w-6 h-6 text-[#0a0f1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke-width="2"/>
+                    <circle cx="12" cy="9" r="2.5" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-[#00ffff] font-bold text-lg mb-1">Location</h4>
+                  <p class="text-white">Cavite, Philippines</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-[#00ff99] rounded-lg flex-shrink-0">
+                  <svg class="w-6 h-6 text-[#0a0f1c]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-[#00ffff] font-bold text-lg mb-1">LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/ronald-josiah-cruz-64848330a/?skipRedirect=true" target="_blank" class="text-white hover:text-[#00ffff] transition-colors">
+                    www.linkedin.com/in/ronaldjosiah-cruz
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+      
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#0a0f1c] py-12 px-4">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Decorative Line with Social Icons -->
+        <div class="flex items-center justify-center gap-8 mb-8">
+          <!-- Left Line -->
+          <div class="flex-1 h-1 bg-gradient-to-r from-transparent to-[#00ff99]"></div>
+          
+          <!-- Social Icons -->
+          <div class="flex gap-4">
+            <a href="https://www.facebook.com/ronaldjosiah.cruz/" target="_blank" class="w-12 h-12 flex items-center justify-center border-2 border-[#00ff99] rounded-lg hover:bg-[#00ff99] transition-all duration-300 group">
+              <i class="fa-brands fa-facebook-f text-[#00ffff]"></i>
+            </a>
+            
+            <a href="https://github.com/ArjoshCruz" target="_blank" class="w-12 h-12 flex items-center justify-center border-2 border-[#00ff99] rounded-lg hover:bg-[#00ff99] transition-all duration-300 group">
+              <i class="fa-brands fa-github text-[#00ffff]"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/ronald-josiah-cruz-64848330a/?skipRedirect=true" target="_blank" class="w-12 h-12 flex items-center justify-center border-2 border-[#00ff99] rounded-lg hover:bg-[#00ff99] transition-all duration-300 group">
+              <i class="fa-brands fa-linkedin text-[#00ffff]"></i>
+            </a>
+          </div>
+          
+          <!-- Right Line -->
+          <div class="flex-1 h-1 bg-gradient-to-l from-transparent to-[#00ff99]"></div>
+        </div>
+        
+        <!-- Logo -->
+        <div class="flex justify-center mb-8">
+          <div class="flex items-center gap-3">
+            <img src="img/logo.png" alt="ArjoshTech Logo" class="h-12 md:h-20" />
+            <img
+              src="img/arjoshtech-logo-name.png"
+              alt="ArjoshTech Logo Name"
+              class="h-10 md:h-16"
+            />
+          </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="text-center text-white text-lg mb-6">
+          © 2025 ArjoshTech. All Rights Reserved.
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="flex flex-wrap items-center justify-center gap-4 text-white text-lg">
+          <a href="#" class="hover:text-[#00ffff] transition-colors duration-300 underline">Home</a>
+          <span class="text-gray-600">|</span>
+          <a href="#" class="hover:text-[#00ffff] transition-colors duration-300 underline">About</a>
+          <span class="text-gray-600">|</span>
+          <a href="#" class="hover:text-[#00ffff] transition-colors duration-300 underline">Services</a>
+          <span class="text-gray-600">|</span>
+          <a href="#" class="hover:text-[#00ffff] transition-colors duration-300 underline">Projects</a>
+        </div>
+        
+      </div>
+    </footer>
+
+
 
     <!-- Typing script -->
     <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.min.js"></script>
