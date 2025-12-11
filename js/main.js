@@ -23,7 +23,7 @@ new TypeIt("#typing-text-landing", {
   cursorChar: "|"
 }).go();
 
-// About section typing (optional)
+// About section typing 
 new TypeIt("#typing-text-about", {
   strings: ["Web Developer", "Frontend Designer", "UI/UX Enthusiast"],
   speed: 100,
@@ -34,3 +34,22 @@ new TypeIt("#typing-text-about", {
   nextStringDelay: 1000,
   cursorChar: "|"
 }).go();
+
+
+// Back to Top Button
+const backToTopButton = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    backToTopButton.classList.remove('hidden');
+  } else {
+    backToTopButton.classList.add('hidden');
+  }
+});
+
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
