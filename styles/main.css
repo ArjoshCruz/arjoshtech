@@ -27,21 +27,21 @@
     transition: max-height 0.75s ease-out;
 }
 
-    /* Custom meter styling */
-    meter {
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-    }
-    
-    /* Chrome/Safari */
-    meter::-webkit-meter-bar {
-      background: #1a1a2e;
-      border-radius: 10px;
-      border: 2px solid #00ff99;
-    }
-    
-    meter::-webkit-meter-optimum-value {
-      background: linear-gradient(90deg, #00ff99, #00ffff);
-      border-radius: 8px;
-    }
+/* Custom meter styling */
+meter {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* For Chrome/Safari */
+meter::-webkit-meter-bar {
+  background: #1a1a2e;
+  border-radius: 10px;
+  border: 2px solid #00ff99;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(90deg, #00ff99, #00ffff);
+  border-radius: 8px;
+}
